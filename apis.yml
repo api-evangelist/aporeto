@@ -1,8 +1,25 @@
 aid: aporeto
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aporeto.png
 name: Aporeto
-description: Aporeto is a company surfaced as a portfolio company of dcvc, wing-venture-capital and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Aporeto was a zero trust cloud security company providing machine identity-based
+  microsegmentation, a distributed firewall, and Kubernetes network security for hybrid and
+  multi-cloud application workloads. Backed by DCVC and Wing Venture Capital, Aporeto was acquired
+  by Palo Alto Networks in December 2019 (~$150M) and its identity-based microsegmentation platform
+  was folded into Prisma Cloud. The company no longer operates an independent product, brand, or
+  developer surface; aporeto.com now redirects to Palo Alto Networks' Prisma Cloud. This profile is
+  retained as a network record of the acquired company; no standalone API, developer portal, or
+  specification surface exists to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/aporeto/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,14 +28,31 @@ x-backed-by:
 - wing-venture-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: palo-alto-networks
+x-acquired-date: '2019-12-23'
+x-successor: https://www.paloaltonetworks.com/prisma/cloud
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+x-enriched: '2026-07-17'
 tags:
 - Company
+- Security
+- Zero Trust
+- Microsegmentation
+- Cloud Security
+- Kubernetes
+- Acquired
+- Identity
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
